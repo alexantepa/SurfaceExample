@@ -37,6 +37,7 @@ public class MySurface extends SurfaceView implements SurfaceHolder.Callback {
         res = getResources();
         image = BitmapFactory.decodeResource(res, R.drawable.snowboarding);
         paint = new Paint();
+        getHolder().addCallback(this);
     }
 
     @Override
